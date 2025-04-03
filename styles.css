@@ -1,0 +1,241 @@
+/* Reset CSS - Đặt lại các giá trị mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cấu hình cho body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Màu nền sáng */
+    color: #333;  /* Màu chữ đen */
+}
+
+/* Chỉnh màu cho tiêu đề trong phần hero */
+.hero h1 {
+    color: #1e6a82; /* Thay đổi màu tiêu đề */
+}
+
+/* Chỉnh màu cho đoạn mô tả trong phần hero */
+.hero p {
+    color: #f60a4d; /* Thay đổi màu mô tả */
+}
+
+/* Thanh điều hướng */
+.navbar {
+    background-color: #fff;  /* Màu nền thanh điều hướng sáng */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Bóng đổ nhẹ */
+    transition: background-color 0.3s ease;  /* Thêm hiệu ứng khi thay đổi màu nền */
+}
+
+/* Màu cho liên kết trong navbar */
+.navbar .nav-link {
+    color: #333;
+    padding: 15px 20px;  /* Khoảng cách cho các liên kết */
+}
+
+/* Màu khi hover vào liên kết trong navbar */
+.navbar .nav-link:hover {
+    color: #007bff;  /* Màu khi hover */
+}
+
+/* Phần Hero - phần lớn của trang */
+.hero {
+    background: url('hero.jpg') center/cover no-repeat;
+    height: 100vh;  /* Chiều cao toàn màn hình */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Phần giới thiệu về Linh Đan Spa */
+#about {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;  /* Màu nền sáng */
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1f1fbb;  /* Màu tiêu đề */
+}
+
+#about img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);  /* Thêm bóng đổ cho hình ảnh */
+}
+
+/* Phần Dịch vụ */
+#services {
+    background-color: #f8f9fa;  /* Màu nền sáng */
+    padding: 50px 0;
+}
+
+/* Cấu hình cho các thẻ card trong phần dịch vụ */
+#services .card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);  /* Bóng đổ cho card */
+}
+
+#services .card-img-top {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+#services .card-body {
+    text-align: center;
+    color: #333;  /* Màu chữ trong card */
+}
+
+/* Hiệu ứng khi hover vào card */
+.service-card:hover {
+    transform: scale(1.05);  /* Phóng to khi hover */
+    transition: 0.3s ease-in-out;
+}
+
+/* Phần liên hệ */
+#contact {
+    background-color: #fff;  /* Màu nền sáng */
+    padding: 50px 0;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;  /* Căn giữa form */
+    background-color: #f8f9fa;  /* Màu nền form liên hệ */
+    padding: 30px;
+    border-radius: 10px;
+    color: #333;  /* Màu chữ trong form */
+}
+
+/* Phần footer */
+footer {
+    background-color: #333;  /* Màu nền footer */
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Hiệu ứng fade-in */
+.fade {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade.visible {
+    opacity: 1;
+}
+
+/* Phong cách cho thanh điều hướng */
+.navbar {
+    background-color: #fff;  /* Màu nền thanh điều hướng */
+    transition: background-color 0.3s ease;  /* Thêm hiệu ứng cho tất cả các thay đổi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Bóng đổ nhẹ */
+}
+
+/* Tạo hiệu ứng hover cho các mục trong navbar */
+.navbar-nav .nav-item .nav-link {
+    color: #333;  /* Màu chữ mặc định */
+    font-size: 18px;  /* Cỡ chữ */
+    transition: all 0.3s ease;  /* Thêm hiệu ứng cho hover */
+    padding: 10px 15px;  /* Khoảng cách cho các liên kết */
+}
+
+/* Màu khi hover trên các liên kết trong navbar */
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff;  /* Màu khi hover */
+    transform: scale(1.1);  /* Phóng to liên kết khi hover */
+    text-decoration: underline;  /* Thêm gạch chân khi hover */
+}
+
+/* Tạo hiệu ứng hover cho navbar */
+.navbar:hover {
+    background-color: #f1f1f1;  /* Màu nền khi hover vào navbar */
+}
+
+/* Tạo hiệu ứng cho logo */
+.navbar-brand {
+    font-size: 24px;
+    color: #007bff;  /* Màu logo */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Thay đổi màu logo khi hover */
+.navbar-brand:hover {
+    color: #333;
+}
+
+/* Thanh điều hướng cố định */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;  /* Đảm bảo thanh điều hướng luôn trên các phần tử khác */
+}
+
+/* Điều chỉnh padding cho body để tránh bị che khuất nội dung */
+body {
+    padding-top: 80px;  /* Đảm bảo không bị che khuất khi có thanh điều hướng cố định */
+}
+/* Bảng giá */
+#pricing {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.pricing-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+.card-price {
+    font-size: 1.5rem;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Hiệu ứng hover cho nút đặt lịch */
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
