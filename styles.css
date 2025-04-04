@@ -11,7 +11,7 @@ body {
     background-color: #d2b48c;
     color: #333;
     padding-top: 80px;
-    }
+}
 
 .navbar {
     background-color: #d2b48c;
@@ -140,6 +140,50 @@ body {
     height: auto;
     border-radius: 110px;
     box-shadow: 0 5px 15px rgba(90, 49, 49, 0.1);
+}
+
+#about-header {
+    background-color: #e6d1a8;
+    padding: 100px 0 50px;
+    margin-bottom: 50px;
+}
+
+.about-header h1 {
+    color: #2e4f4f;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+
+.about-header .lead {
+    color: #1a3c3c;
+    font-size: 1.5rem;
+}
+
+.about-section, .mission-section {
+    padding: 50px 0;
+    background-color: #f5e6d3;
+    margin-bottom: 30px;
+}
+
+.about-section h2, .mission-section h2 {
+    color: #2e4f4f;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+}
+
+.about-section p, .mission-section p {
+    color: #1a3c3c;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.about-section img, .mission-section img {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 #services {
@@ -410,7 +454,6 @@ footer .text-center {
 .fade.visible {
     opacity: 1;
 }
-/* Add this to your existing CSS */
 
 #contact .form-control, 
 #contact .form-label, 
@@ -418,7 +461,6 @@ footer .text-center {
     color: #2e4f4f; /* Matching the title color */
 }
 
-/* For the dropdown specifically for "Chọn Giờ" */
 .form-select {
     background-color: #3a6b6b; /* Darker background for select fields */
     color: #ccc; /* White text color */
@@ -427,18 +469,17 @@ footer .text-center {
     border-radius: 5px;
 }
 
-/* Placeholder color */
 #contact .form-control::placeholder {
     color: #ccc; /* Placeholder color remains gray */
 }
 
-/* Focus styles */
 .form-control:focus {
     background-color: #1a3c3c; /* Background when focused */
     border-color: #4a7c7c;
     box-shadow: none;
     color: #fff; /* Ensure text is white when focused */
 }
+
 .chat-icon {
     position: fixed;
     bottom: 20px;
@@ -476,4 +517,80 @@ footer .text-center {
     cursor: pointer;
     float: right;
     color: #333;
+}
+
+.card-body {
+    min-height: 180px; /* Chiều cao tối thiểu để các card bằng nhau */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Căn giữa nội dung trong card */
+    text-align: center;
+}
+
+.branch-card {
+    transition: transform 0.3s ease;
+    border: 1px solid #d2b48c;
+    height: 100%; /* Đảm bảo card chiếm toàn bộ chiều cao của cột */
+}
+
+.branch-card:hover {
+    transform: translateY(-10px);
+}
+/* Thêm styles cho trang Services */
+.services-intro {
+    background-color: #f5e6d3;
+    padding: 50px 0;
+    margin-bottom: 30px;
+}
+
+.service-detail {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-detail h3 {
+    color: #2e4f4f;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.service-detail p {
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.service-detail ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.service-detail li {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.service-detail li:before {
+    content: "•";
+    color: #2e4f4f;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.why-choose-us {
+    background-color: #e6d1a8;
+    padding: 40px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.why-choose-us h3 {
+    color: #2e4f4f;
+    margin-bottom: 20px;
 }

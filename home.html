@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ - Sang Italy Spa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">
+                <img src="image/logo.png" alt="Logo" style="height: 40px; margin-right: 20px;">Sang Italy Spa
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Dịch vụ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Bảng giá</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Đặt lịch</a>
+                    </li>
+                </ul>
+                <div class="language-selector">
+                    <select class="form-select">
+                        <option value="en">EN</option>
+                        <option value="vn" selected>VN</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero d-flex align-items-center" style="background: url('image/bg-page.png') center/cover no-repeat; height: 100vh;">
+        <div class="container text-center text-white">
+            <h1 class="display-4 fw-bold">Chào mừng đến với Sang Italy Spa</h1>
+            <p class="lead">Thư thái - Tự Nhiên - Tỏa Sáng</p>
+            <a href="contact.html" class="btn btn-lg btn-primary">Đặt lịch ngay</a>
+        </div>
+    </header>
+
+    <!-- Featured Services Preview -->
+<section class="container my-5">
+    <h2 class="text-center fw-bold mb-4"style="font-family: 'Playfair Display', serif; color:#bd9157 ;">Dịch Vụ Nổi Bật</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card shadow-lg service-card" style="background-color: #d2b48c;">
+                <img src="https://images.pexels.com/photos/3764568/pexels-photo-3764568.jpeg" class="card-img-top" alt="Massage" style="height: 200px; object-fit: cover;">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Massage Thư Giãn</h5>
+                    <p class="card-text">Trải nghiệm massage đẳng cấp</p>
+                    <a href="services.html" class="btn btn-primary" style="background-color: #1a3c3c; border: none;">Xem thêm</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-lg service-card" style="background-color: #d2b48c;">
+                <img src="https://images.pexels.com/photos/5069609/pexels-photo-5069609.jpeg" class="card-img-top" alt="Skincare" style="height: 200px; object-fit: cover;">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Chăm Sóc Da</h5>
+                    <p class="card-text">Liệu trình chăm sóc chuyên sâu</p>
+                    <a href="services.html" class="btn btn-primary" style="background-color: #1a3c3c; border: none;">Xem thêm</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-lg service-card" style="background-color: #d2b48c;">
+                <img src="https://images.pexels.com/photos/4207236/pexels-photo-4207236.jpeg" class="card-img-top" alt="Treatment" style="height: 200px; object-fit: cover;">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Trị Liệu Cao Cấp</h5>
+                    <p class="card-text">Phục hồi và trẻ hóa làn da</p>
+                    <a href="services.html" class="btn btn-primary" style="background-color: #1a3c3c; border: none;">Xem thêm</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Branch Section -->
+<section class="branch-section">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5" style="font-family: 'Playfair Display', serif; color:#bd9157 ;;">Chi Nhánh Của Sự Thư Giãn</h2>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card branch-card shadow-lg" style="background-color: #d2b48c;">
+                    <div class="card-body">
+                        <h5 class="card-title">Hội An</h5>
+                        <p class="card-text">123 Đường Cổ, Hội An, Quảng Nam</p>
+                        <p>Hotline: 0903 123 001</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card branch-card shadow-lg" style="background-color: #d2b48c;">
+                    <div class="card-body">
+                        <h5 class="card-title">Huế</h5>
+                        <p class="card-text">45 Lê Lợi, TP. Huế, Thừa Thiên Huế</p>
+                        <p>Hotline: 0903 123 002</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card branch-card shadow-lg" style="background-color: #d2b48c;">
+                    <div class="card-body">
+                        <h5 class="card-title">Hà Nội</h5>
+                        <p class="card-text">78 Phố Huế, Hoàn Kiếm, Hà Nội</p>
+                        <p>Hotline: 0903 123 003</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card branch-card shadow-lg" style="background-color: #d2b48c;">
+                    <div class="card-body">
+                        <h5 class="card-title">Sài Gòn</h5>
+                        <p class="card-text">97 Man Thiện, Thủ Đức, TP. Hồ Chí Minh</p>
+                        <p>Hotline: 0903 123 004</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Đăng ký để nhận thông tin</h5>
+                <form>
+                    <div class="row g-2">
+                        <div class="col">
+                            <input type="email" class="form-control" placeholder="Email address">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary">Đăng ký</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3">
+                <h5>Sang Italy Spa</h5>
+                <p>97 Man Thiện, Hiệp Phú, Thủ Đức, Hồ Chí Minh</p>
+                <p>Hotline: 0903 123 456</p>
+                <p>Email: <a href="mailto:sangitalyspa@gmail.com">sangitalyspa@gmail.com</a></p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Giờ mở cửa</h5>
+                        <p>Thứ 2 - Thứ 7: 9:00 - 20:00</p>
+                        <p>Chủ nhật: 10:00 - 19:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col text-center">
+                <p>&copy; 2025 Sang Italy Spa. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Biểu tượng chat -->
+<div id="chat-icon" class="chat-icon" onclick="openChat()">
+<i class="fas fa-comments"></i>
+</div>
+
+<!-- Cửa sổ chat (ẩn mặc định) -->
+<div id="chat-window" class="chat-window">
+<button onclick="closeChat()" class="close-btn">&times;</button>
+<h5>Chat với chúng tôi</h5>
+<div class="chat-content">
+    <!-- Nội dung chat sẽ ở đây -->
+</div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
