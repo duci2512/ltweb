@@ -1,143 +1,407 @@
-/* Reset CSS - Đặt lại các giá trị mặc định */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Cấu hình cho body */
 body {
-    font-family: Arial, sans-serif;
+    background: url('https://i.pinimg.com/474x/38/11/a9/3811a976da87feaa28edfb733486678e.jpg') center/cover no-repeat;
+    font-family: 'Playfair Display', serif; /* Áp dụng font Playfair Display cho toàn bộ website */
     line-height: 1.6;
-    background-color: #f4f4f4; /* Màu nền sáng */
-    color: #333;  /* Màu chữ đen */
-}
-
-/* Chỉnh màu cho tiêu đề trong phần hero */
-.hero h1 {
-    color: #1e6a82; /* Thay đổi màu tiêu đề */
-}
-
-/* Chỉnh màu cho đoạn mô tả trong phần hero */
-.hero p {
-    color: #f60a4d; /* Thay đổi màu mô tả */
-}
-
-/* Thanh điều hướng */
-.navbar {
-    background-color: #fff;  /* Màu nền thanh điều hướng sáng */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Bóng đổ nhẹ */
-    transition: background-color 0.3s ease;  /* Thêm hiệu ứng khi thay đổi màu nền */
-}
-
-/* Màu cho liên kết trong navbar */
-.navbar .nav-link {
+    background-color: #d2b48c;
     color: #333;
-    padding: 15px 20px;  /* Khoảng cách cho các liên kết */
+    padding-top: 80px;
+    }
+
+.navbar {
+    background-color: #d2b48c;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
-/* Màu khi hover vào liên kết trong navbar */
+.navbar:hover {
+    background-color: #e6d1a8;
+}
+
+.navbar .nav-link {
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    font-weight: 400; /* Font nhẹ nhàng giống hình ảnh */
+}
 .navbar .nav-link:hover {
-    color: #007bff;  /* Màu khi hover */
+    color: #2e4f4f;
 }
 
-/* Phần Hero - phần lớn của trang */
+.navbar-nav .nav-item .nav-link {
+    color: #333;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #2e4f4f;
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: #2e4f4f;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #333;
+}
+
+.navbar-brand img {
+    height: 60px;
+    width: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.navbar .language-selector .form-select {
+    background-color: #4a7c7c; /* Nền bo góc cho bộ chọn ngôn ngữ */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.navbar .language-selector .form-select:focus {
+    outline: none;
+    box-shadow: none;
+    background-color: #3a6b6b;
+}
+
 .hero {
     background: url('hero.jpg') center/cover no-repeat;
-    height: 100vh;  /* Chiều cao toàn màn hình */
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
     color: white;
+    padding-top: 20px;
 }
 
 .hero h1 {
+    color: #2e4f4f;
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: 700;
+    margin: 0;
 }
 
 .hero p {
+    color: #2e4f4f;
     font-size: 1.2rem;
+    margin: 10px 0;
+}
+.hero .btn {
+    margin-top: 15px;
+    background-color: #1a3c3c; /* Đổi màu nút Đặt lịch ngay */
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
 }
 
-/* Phần giới thiệu về Linh Đan Spa */
+.hero .btn:hover {
+    background-color: #3a6b6b; /* Màu sáng hơn khi hover */
+}
 #about {
     text-align: center;
     padding: 50px 0;
-    background-color: #fff;  /* Màu nền sáng */
+    background-color: #d2b48c;
 }
 
 #about h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #1f1fbb;  /* Màu tiêu đề */
+    color: #2e4f4f;
 }
 
 #about img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);  /* Thêm bóng đổ cho hình ảnh */
+    width: 80vw;
+    height: auto;
+    border-radius: 110px;
+    box-shadow: 0 5px 15px rgba(90, 49, 49, 0.1);
 }
 
-/* Phần Dịch vụ */
 #services {
-    background-color: #f8f9fa;  /* Màu nền sáng */
+    background-color: #d2b48c;
     padding: 50px 0;
 }
 
-/* Cấu hình cho các thẻ card trong phần dịch vụ */
 #services .card {
     border: none;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);  /* Bóng đổ cho card */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #e6d1a8;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #services .card-img-top {
-    max-height: 300px;
+    height: 200px;
     object-fit: cover;
 }
 
 #services .card-body {
     text-align: center;
-    color: #333;  /* Màu chữ trong card */
+    color: #333;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-/* Hiệu ứng khi hover vào card */
 .service-card:hover {
-    transform: scale(1.05);  /* Phóng to khi hover */
+    transform: scale(1.05);
     transition: 0.3s ease-in-out;
 }
 
-/* Phần liên hệ */
 #contact {
-    background-color: #fff;  /* Màu nền sáng */
+    background-color: #d2b48c;
     padding: 50px 0;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2e4f4f;
+    margin-bottom: 20px;
 }
 
 #contact form {
     max-width: 600px;
-    margin: 0 auto;  /* Căn giữa form */
-    background-color: #f8f9fa;  /* Màu nền form liên hệ */
+    margin: 0 auto;
+    background-color: #e6d1a8; /* Màu nền xanh lá đậm giống hình ảnh */
     padding: 30px;
     border-radius: 10px;
-    color: #333;  /* Màu chữ trong form */
+    color: #fff; /* Màu chữ trắng */
 }
 
-/* Phần footer */
+#contact .form-label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff; /* Màu chữ trắng cho nhãn */
+}
+
+#contact .form-control {
+    background-color: #3a6b6b; /* Màu nền tối hơn cho các trường nhập liệu */
+    border: 1px solid #e6d1a8;
+    color: #fff; /* Màu chữ trắng */
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+#contact .form-control::placeholder {
+    color: #ccc; /* Màu placeholder xám nhạt */
+}
+
+#contact .form-control:focus {
+    background-color: #1a3c3c;
+    border-color: #4a7c7c; /* Màu viền khi focus */
+    box-shadow: none;
+    color: #fff;
+}
+
+#contact textarea.form-control {
+    height: 120px; /* Chiều cao cho textarea */
+}
+
+#contact .btn-primary {
+    background-color: #1a3c3c; /* Màu nút Gửi */
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#contact .btn-primary:hover {
+    background-color: #3a6b6b; /* Màu sáng hơn khi hover */
+}
+
+#pricing {
+    background-color: #d2b48c;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#pricing h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2e4f4f;
+    margin-bottom: 20px;
+}
+
+#pricing .lead {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#pricing .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#pricing .col-md-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card {
+    border: none;
+    border-radius: 15px;
+    background-color: #e6d1a8;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 10px;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+.pricing-card .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card-price {
+    font-size: 1.5rem;
+    color: #2e4f4f;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.pricing-card ul li {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.pricing-card .btn-primary {
+    background-color: #1a3c3c;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.pricing-card .btn-primary:hover {
+    background-color: #1a3c3c;
+}
+
+.btn-primary:hover {
+    background-color: #1a3c3c;
+    border-color: #1a3c3c;
+}
+
 footer {
-    background-color: #333;  /* Màu nền footer */
+    background-color: #2e4f4f;
     color: white;
     padding: 30px 0;
-    text-align: center;
+    text-align: left;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
 footer p {
     font-size: 1rem;
+    margin-bottom: 10px;
 }
 
-/* Hiệu ứng fade-in */
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .form-control {
+    background-color: #1a3c3c;
+    border: none;
+    color: #fff;
+}
+
+footer .btn-primary {
+    background-color: #4a7c7c;
+    border: none;
+}
+
+footer .btn-primary:hover {
+    background-color: #3a6b6b;
+}
+
+footer .social-icons a {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+footer .social-icons a:hover {
+    color: #ccc;
+}
+
+footer .text-center {
+    border-top: 1px solid #4a7c7c;
+    padding-top: 20px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
 .fade {
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -146,96 +410,70 @@ footer p {
 .fade.visible {
     opacity: 1;
 }
+/* Add this to your existing CSS */
 
-/* Phong cách cho thanh điều hướng */
-.navbar {
-    background-color: #fff;  /* Màu nền thanh điều hướng */
-    transition: background-color 0.3s ease;  /* Thêm hiệu ứng cho tất cả các thay đổi */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Bóng đổ nhẹ */
+#contact .form-control, 
+#contact .form-label, 
+#contact h2 {
+    color: #2e4f4f; /* Matching the title color */
 }
 
-/* Tạo hiệu ứng hover cho các mục trong navbar */
-.navbar-nav .nav-item .nav-link {
-    color: #333;  /* Màu chữ mặc định */
-    font-size: 18px;  /* Cỡ chữ */
-    transition: all 0.3s ease;  /* Thêm hiệu ứng cho hover */
-    padding: 10px 15px;  /* Khoảng cách cho các liên kết */
+/* For the dropdown specifically for "Chọn Giờ" */
+.form-select {
+    background-color: #3a6b6b; /* Darker background for select fields */
+    color: #ccc; /* White text color */
+    border: 1px solid #e6d1a8;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-/* Màu khi hover trên các liên kết trong navbar */
-.navbar-nav .nav-item .nav-link:hover {
-    color: #007bff;  /* Màu khi hover */
-    transform: scale(1.1);  /* Phóng to liên kết khi hover */
-    text-decoration: underline;  /* Thêm gạch chân khi hover */
+/* Placeholder color */
+#contact .form-control::placeholder {
+    color: #ccc; /* Placeholder color remains gray */
 }
 
-/* Tạo hiệu ứng hover cho navbar */
-.navbar:hover {
-    background-color: #f1f1f1;  /* Màu nền khi hover vào navbar */
+/* Focus styles */
+.form-control:focus {
+    background-color: #1a3c3c; /* Background when focused */
+    border-color: #4a7c7c;
+    box-shadow: none;
+    color: #fff; /* Ensure text is white when focused */
 }
-
-/* Tạo hiệu ứng cho logo */
-.navbar-brand {
+.chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1a3c3c;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     font-size: 24px;
-    color: #007bff;  /* Màu logo */
-    font-weight: bold;
-    transition: color 0.3s ease;
 }
 
-/* Thay đổi màu logo khi hover */
-.navbar-brand:hover {
+.chat-icon:hover {
+    background-color: #1a3c3c;
+}
+
+.chat-window {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    display: none; /* Ẩn mặc định */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.chat-window .close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    float: right;
     color: #333;
 }
-
-/* Thanh điều hướng cố định */
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;  /* Đảm bảo thanh điều hướng luôn trên các phần tử khác */
-}
-
-/* Điều chỉnh padding cho body để tránh bị che khuất nội dung */
-body {
-    padding-top: 80px;  /* Đảm bảo không bị che khuất khi có thanh điều hướng cố định */
-}
-/* Bảng giá */
-#pricing {
-    background-color: #f8f9fa;
-    padding: 50px 0;
-}
-
-.pricing-card {
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.pricing-card:hover {
-    transform: scale(1.05);
-}
-
-.card-price {
-    font-size: 1.5rem;
-    color: #007bff;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.card-title {
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-/* Hiệu ứng hover cho nút đặt lịch */
-.btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-}
-

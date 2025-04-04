@@ -47,7 +47,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 el.classList.add('visible');
             }
         });
-
+        function openChat() {
+            document.getElementById("chat-window").style.display = "block";
+        }
+        
+        function closeChat() {
+            document.getElementById("chat-window").style.display = "none";
+        }
         // Thay đổi màu thanh điều hướng khi cuộn trang
         const navbar = document.querySelector('.navbar');
         if (window.scrollY > 50) {
